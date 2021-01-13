@@ -28,7 +28,7 @@ function App() {
     if (debouncedSearchTerm && debouncedSearchTerm !== "") {
       axios
         .get(
-          `http://hn.algolia.com/api/v1/search?query=${debouncedSearchTerm}&tags=story`
+          `https://hn.algolia.com/api/v1/search?query=${debouncedSearchTerm}&tags=story`
         )
         .then((response) => {
           console.log(response.data);
